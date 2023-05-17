@@ -1,5 +1,6 @@
 import './Loader.styled.js';
 import { SpinnerEl, SpinnerContainer } from './Loader.styled.js';
+
 import { ImSpinner9 } from 'react-icons/im';
 
 export default function Loader() {

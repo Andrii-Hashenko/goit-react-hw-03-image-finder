@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import pixabayAPI from '../services/pixabay-api';
+
 import SearchBar from 'components/Searchbar';
 import Loader from './Loader';
 import ButtonLoadMore from './Button';
@@ -17,7 +18,7 @@ export default class App extends Component {
     page: 1,
   };
 
-  componentDidUpdate(prevState) {
+  componentDidUpdate(prevProps, prevState) {
     const prevSearch = prevState.searchImage;
     const nextSearch = this.state.searchImage;
     const prevPage = prevState.page;
@@ -89,6 +90,15 @@ export default class App extends Component {
     }));
   }
   scrollToBottom() {
+    // const { height: cardHeight } = document
+    //   .querySelector('.ImageGallery')
+    //   .firstElementChild.getBoundingClientRect();
+    // window.scrollBy({
+    //   // top: cardHeight * 40,
+    //   top: cardHeight * 1,
+    //   behavior: 'smooth',
+    // });
+
     window.scrollTo({
       top: document.documentElement.scrollHeight,
       behavior: 'smooth',

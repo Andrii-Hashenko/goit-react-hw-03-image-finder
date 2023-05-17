@@ -1,4 +1,5 @@
 import { Component } from 'react';
+
 import PropTypes from 'prop-types';
 import { toast } from 'react-toastify';
 import './Searchbar.styled.js';
@@ -13,23 +14,19 @@ export default class SearchBar extends Component {
   state = {
     searchImage: '',
   };
-  
+
   handleNameChange = event => {
-    
     this.setState({ searchImage: event.currentTarget.value.toLowerCase() });
   };
 
   handleSubmit = event => {
     event.preventDefault();
-    
-    if (this.state.searchImage.trim() === '') {
-      
 
+    if (this.state.searchImage.trim() === '') {
       toast.error('Please enter your query');
       return;
     }
     this.props.inSubmit(this.state.searchImage);
-    
   };
 
   render() {

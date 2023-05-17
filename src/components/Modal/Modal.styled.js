@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+/*
+ * Стили компонента Modal
+ */
+
 export const Overlay = styled.div`
   position: fixed;
   top: 0;
