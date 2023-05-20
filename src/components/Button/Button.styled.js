@@ -1,8 +1,5 @@
 import styled from 'styled-components';
 
-/*
- * Стили компонента Buton (Load more)
- */
 export const Button = styled.div`
   padding: 8px 16px;
   border-radius: 2px;
