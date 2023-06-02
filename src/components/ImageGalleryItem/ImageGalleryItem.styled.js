@@ -1,5 +1,8 @@
 import styled from 'styled-components';
 
+/*
+ * Стили компонента ImageGalleryItem
+ */
 export const ImageItem = styled.li`
   border-radius: 2px;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),

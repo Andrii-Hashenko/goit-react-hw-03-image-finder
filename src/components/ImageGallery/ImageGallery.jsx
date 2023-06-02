@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ImageGalleryItem from '../ImageGalleryItem';
-
+// import './ImageGallery.styled.js';
 import { ImageGallery } from './ImageGallery.styled.js';
 
 export default function PixabayImageGallery({ images }) {
