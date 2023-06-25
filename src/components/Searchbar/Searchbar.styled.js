@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 import img from '../Searchbar/search.png';
-/*
- * Стили компонента Searchbar
- */
+
 export const Searchbar = styled.header`
   top: 0;
   left: 0;
@@ -22,12 +20,7 @@ export const Searchbar = styled.header`
     0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
 `;
 
-/*
- * Стили компонента Searchbar
- */
-/*
- * Стили компонента SearchForm
- */
+
 export const SearchForm = styled.form`
   display: flex;
   align-items: center;
